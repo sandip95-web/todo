@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Grape+Nuts&family=Raleway:ital,wght@1,500&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    background: url('../../public/image/star1.jpg');
+}
+section{
+    width: 60%;
+    margin: 9rem auto;
+}
+.todo-main{
+    border:2px solid green;
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-color: sienna;
+}
+.todo-main:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+.todo-name,.todo-message{
+    padding: 1rem; 
+}
+.todo-name{
+    font-size: 1.6rem;
+    color:bisque
+}
+.todo-message{
+    font-size: 1.5rem;
+}
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.del-btn{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ------------------moblie version */
+@media (max-width:760px) {
+    section{
+        width: 90%;
+    }
+    .todo-name,.todo-message{
+        padding: 0.7rem;
+    }
+    .todo-main:hover{
+        transform: none;
+    }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300&family=Grape+Nuts&family=Raleway:ital,wght@1,500&display=swap');
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.add-btn{
+ border: 3px solid white;
+ background: none;
+ border-radius: 1rem 0rem 0rem 1rem;
+ padding: 1rem;
+ font-size: 1.5rem; 
+ color: white;
+ cursor: pointer;
+}
+.add-btn:hover{
+    border:3px solid gold;
+    background: gray;
+    color:#000;
+    transition: 1s ease all;
+}
+
+.container{
+    width: 80%;
+    margin:1rem auto;
+    background-color: black;
+    border: 2px solid red;
+   display: flex;
+   justify-content: space-between;
+    padding: 1rem;
+}
+.title h1{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    cursor: pointer;
+    font-size: 2.6rem;
+}
+.link{
+    color:white;
+}
+/* -------Mobile Version--------- */
+@media (max-width:760px) {
+ .container{
+     width: 100%;
+     border:none;
+     border-bottom: 0.1rem white solid;
+ }
+ .title h1{
+     font-size: 1.3rem;
+ }
+ .add-btn{
+     font-size: 0.8rem;
+     margin-top: -10rem;
+ }   
+
+}
